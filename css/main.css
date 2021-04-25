@@ -1,0 +1,200 @@
+.main {
+    margin: 0 auto;
+    max-width: 1400px;
+    margin: 1rem auto;
+}
+
+.about__team {
+    margin: 4rem 2rem;
+    background: white;
+    border: 2px solid #F2E49B;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    /* display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: minmax(200px, 2fr) minmax(100px, 1fr);
+    grid-auto-flow: column;
+    align-items: center;
+    font-family: 'Play',
+        sans-serif;
+}
+
+.about__team .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__team .content .title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.about__team .content .title span {
+    font-family: 'Kaushan Script',
+        cursive;
+}
+
+.about__team .content .text {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.about__team .logo {
+    aspect-ratio: 1.778 / 1;
+    object-fit: cover;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 0 15px 15px 0;
+}
+
+
+@media (max-width: 620px) {
+    .about__team {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .about__team .content {
+        padding: 2rem;
+    }
+
+    .about__team .content .title {
+        margin-bottom: 1rem;
+    }
+
+    .about__team .logo {
+        border-radius: 0 0 15px 15px;
+    }
+
+}
+
+@media (max-width: 340px) {
+    .about__team .content {
+        padding: .5rem;
+    }
+
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.team .title {
+    font-family: 'Play',
+        sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.team .people {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem;
+    margin: 1rem 0;
+}
+
+.team .people .icon {
+    aspect-ratio: 1 / 1;
+    max-width: 250px;
+    width: 100%;
+}
+
+.team .people .content {
+    background: white;
+    padding: 2rem;
+    font-family: 'Play',
+        sans-serif;
+    font-size: 2rem;
+    transform: skew(-20deg, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    width: 100%;
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.team .people .content .name {
+    transform: skew(20deg, 0);
+    margin-bottom: 1rem;
+}
+
+.team .people .content .position {
+    transform: skew(20deg, 0);
+}
+
+.alex .icon {
+    border: 2px solid #F28D9F;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.alex .content {
+    border: 2px solid #6BB7BF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.alina .icon {
+    border: 2px solid #F2E49B;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.alina .content {
+    border: 2px solid #ec905a;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.ilya .icon {
+    border: 2px solid #6BB7BF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.ilya .content {
+    border: 2px solid #F28D9F;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.ivan .icon {
+    border: 2px solid #ec905a;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.ivan .content {
+    border: 2px solid #F2E49B;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+    .team .people {
+        flex-direction: column;
+    }
+
+    .team .people .icon {
+        margin-bottom: 2rem;
+    }
+
+    .team .people .content {
+        margin: 0 30px;
+    }
+
+}

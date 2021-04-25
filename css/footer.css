@@ -1,0 +1,26 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background: white;
+    font-family: 'Play',
+    sans-serif;
+    font-size: 1.5rem;
+}
+
+.footer .content {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1400px;
+    width: 100%;
+}
+
+.footer .content a{
+    margin-left: 10px;
+    color: #6BB7BF;
+}
+
+.footer .content a img{
+    width: 30px;
+    margin-bottom: -5px;
+}
